@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Cost of Living vs Quality of Life 
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("india_cost_quality_dataset.csv"))
+    df = pd.read_csv("india_cost_quality_dataset.csv")
     # Normalize column names (strip)
     df.columns = [c.strip() for c in df.columns]
     # Ensure expected columns exist; attempt to infer if slightly different names present
